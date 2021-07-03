@@ -1,0 +1,35 @@
+.switcher-container-style {
+  border: 0.5px solid #353535;
+  border-radius: 5px;
+  min-width: 250px;
+}
+
+.switcher-container-style ul {
+  flex-direction: row;
+  display: flex;
+}
+
+.switcher-container-style ul li {
+  user-select: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 13px;
+  flex: 1;
+}
+
+.switcher-container-style ul li:hover {
+  background-color: #0068f13a;
+}
+.switcher-container-style ul li.active {
+  border-radius: 5px;
+}
+.switcher-container-style ul li:first-child.active {
+  background-color: #0069f1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.switcher-container-style ul li:last-child.active {
+  background-color: #0069f1;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
